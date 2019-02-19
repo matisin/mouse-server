@@ -7,6 +7,8 @@ command_click_middle = commmand_base + "click 2"
 command_click_right = commmand_base + "click 3"
 import subprocess
 
+subprocess.Popen('sdptool add SP',stdout=subprocess.PIPE)
+
 #   process = subprocess.Popen(commmand_base.split(), stdout=subprocess.PIPE)
 
 server_sock=BluetoothSocket( RFCOMM )
